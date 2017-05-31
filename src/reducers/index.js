@@ -22,7 +22,7 @@ export default function FilmReducer(state=initState,action){
                 }
         })
       });
-      break;
+     
     case  SELECT_FILM:
         return Object.assign({},state,{
         selectedFilm: action.payload
@@ -33,6 +33,7 @@ export default function FilmReducer(state=initState,action){
         inputText: action.payload
       })
     default:
+    
   }
 
   return state;
